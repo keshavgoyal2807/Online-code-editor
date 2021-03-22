@@ -6,39 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Code Editor</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header class="header">
         <h3 class="header-1">Online Code Editor</h3>
         <div class="header-2">
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>RESULT</li>
+                <li class="html-button">HTML</li>
+                <li class="css-button">CSS</li>
+                <li class="js-button">JS</li>
+                <li class="result-button">RESULT</li>
             </ul>
         </div>
         <div class="header-3">
-            <button>RUN</button>
+            <button class="result">RUN</button>
         </div>
         
     </header>
     <main>
-        <div>
-            <p>HTML</p>
-            <textarea></textarea>
+        <div class="textarea textarea-html">
+            <p class="textarea-tag">HTML</p>
+            <textarea class="textarea-html-content"></textarea>
         </div>
-        <div>
-            <p>CSS</p>
-            <textarea></textarea>
+        <div class="textarea textarea-css toggle-class">
+            <p class="textarea-tag">CSS</p>
+            <textarea class="textarea-css-content"></textarea>
         </div>
-        <div>
-            <p>JS</p>
-            <textarea></textarea>
+        <div class="textarea textarea-js toggle-class">
+            <p class="textarea-tag">JS</p>
+            <textarea class="textarea-js-content"></textarea>
         </div>
-        <div>
-            <p>RESULT</p>
-            <textarea></textarea>
+        <div class="textarea textarea-result">
+            <p class="textarea-tag">RESULT</p>
+            <iframe></iframe>
         </div>
     </main>
 
